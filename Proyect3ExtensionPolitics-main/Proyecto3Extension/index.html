@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Cursos</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>Cursos</p>
+
+
+    <p>sfhsfhs</p>
+    <p>dfhdfhfdh</p>
+    <p>asd</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>fhgsgh</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>sdsgdsdg</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>roedor</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>Cursos</p>
+
+
+    <p id="t">dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>Cursos</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p>dfhdfhfdh</p>
+    <p>Cursos</p>
+
+
+    <p>dfhdfhfdh</p>
+    <p id="f">Cursos</p>
+    <p>Cursos</p>
+
+
+    <p>fhfhhfas</p>
+    <p>dfhdfhfdh</p>
+
+
+    <script>
+        const allTexts = document.querySelectorAll('p'); // Obtengo todos los textos de una web
+        const or1 = 'Oracion de prueba';
+
+        let i = 0;
+        for (i; i < allTexts.length; i++) {
+            let setId = allTexts[i].setAttribute('id', i); // le asigno un id de cada texto en la posicion actual para después poder acceder por id al value y al inner 
+            let textoActual = document.getElementById(i).innerHTML;
+            console.log(textoActual);
+            if (textoActual == 'Cursos') {
+                document.getElementById(i).innerHTML = 'change';
+            }
+
+        }
+    </script>
+</body>
+
+
+</html>

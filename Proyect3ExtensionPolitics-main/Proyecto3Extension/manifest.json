@@ -1,0 +1,18 @@
+{
+    "name": "PolyticsByElPipa",
+    "version": "1.0",
+    "description": "ChangePolitcsV1",
+    "icons": {
+        "128": "128.png"
+    },
+    "content_scripts": [{
+        "matches": [
+            "file:///Users/jeronimovico/Desktop/Proyect3ExtensionPolitics-main/Proyecto3Extension/index.html",
+            "https://davinci.edu.ar/"
+        ],
+        "js": ["check.js"],
+        "run_at": "document_start",
+        "all_frames": true
+    }],
+    "manifest_version": 2
+}
